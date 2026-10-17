@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Política de Privacidade — Trading Platform Backup — aplicativo pessoal de backup criptografado no Google Drive.">
+<title>Política de Privacidade — Trading Platform Backup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main><h1>Política de Privacidade</h1>
+<p><strong>Aplicativo:</strong> Trading Platform Backup<br><strong>Responsável:</strong> <a href="https://github.com/pfeitor">pfeitor</a><br><strong>Atualizada em:</strong> 17 de outubro de 2026.</p>
+<h2>Finalidade</h2>
+<p>O aplicativo é de uso pessoal e utiliza o Google Drive do operador para armazenar e recuperar backups criptografados da sua plataforma de trading.</p>
+<h2>Dados acessados e armazenados</h2>
+<p>A autorização Google utiliza o escopo <code>https://www.googleapis.com/auth/drive.file</code>. O aplicativo gerencia os arquivos de backup criados por ele ou explicitamente autorizados para ele, incluindo conteúdo criptografado e metadados necessários à listagem, recuperação e retenção. Não solicita acesso à caixa de e-mail, contatos ou calendário.</p>
+<p>Os backups podem conter dados operacionais e pessoais já presentes nos bancos de origem. Arquivos operacionais selecionados, como uma sessão Telegram e o arquivo de autenticação do console, ficam em um repositório criptografado separado. Arquivos de configuração <code>.env</code> não fazem parte do backup.</p>
+<h2>Credenciais e proteção</h2>
+<p>O rclone armazena localmente a configuração OAuth, incluindo tokens de acesso e renovação, em arquivo protegido por permissões do sistema. O restic criptografa os backups antes do envio ao Google Drive. As credenciais e a senha de recuperação não são publicadas neste site nem neste repositório público.</p>
+<h2>Uso e compartilhamento</h2>
+<p>Os dados são usados para backup, verificação de integridade, recuperação e retenção. O aplicativo não vende dados, não os utiliza para publicidade ou treinamento de modelos e não os compartilha com terceiros para essas finalidades. O Google Drive é o provedor de armazenamento escolhido pelo operador e processa os arquivos enviados conforme seus próprios termos e políticas.</p>
+<h2>Retenção e exclusão</h2>
+<p>A política configurada mantém 7 backups diários, 4 semanais e 6 mensais por banco; a seleção do restic pode preservar também uma cópia mais antiga conforme o histórico. Localmente, são mantidos os 3 backups enviados mais recentes por banco e todos os pendentes de envio. O repositório separado de segredos é gerido pelo operador.</p>
+<p>O operador pode interromper o serviço, excluir os backups sob seu controle e revogar a autorização nas <a href="https://myaccount.google.com/connections">conexões da Conta Google</a>. Revogar o acesso não exclui automaticamente os arquivos já armazenados nem as cópias locais.</p>
+<h2>Este site e contato</h2>
+<p>Estas páginas estáticas não possuem formulários, cookies próprios ou scripts de análise. A hospedagem é fornecida pelo GitHub Pages, sujeita às práticas de processamento de dados do GitHub.</p>
+<p>Para dúvidas ou pedidos sobre o aplicativo, <a href="https://github.com/pfeitor/trading-backup/issues">abra um chamado no repositório público</a>. Não inclua senhas, tokens, dados pessoais ou conteúdo de backups.</p>
+<footer><a href="index.html">Voltar à página inicial</a></footer></main></body>
+</html>

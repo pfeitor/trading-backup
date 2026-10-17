@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trading Platform Backup — aplicativo pessoal de backup criptografado no Google Drive.">
+<title>Trading Platform Backup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main><h1>Trading Platform Backup</h1>
+<p>Aplicativo pessoal, administrado por <a href="https://github.com/pfeitor">pfeitor</a>, para armazenar backups criptografados de uma plataforma de trading no Google Drive do próprio operador.</p>
+<h2>Finalidade e funcionamento</h2>
+<p>O serviço gera backups lógicos de bancos PostgreSQL, criptografa os arquivos com restic e usa rclone para enviá-los ao Google Drive. A configuração prevê também um repositório criptografado separado para arquivos operacionais selecionados, como a sessão do Telegram e o arquivo de autenticação do console.</p>
+<h2>Acesso ao Google Drive</h2>
+<p>A autorização OAuth solicita o escopo <code>drive.file</code>, destinado aos arquivos criados ou explicitamente autorizados para o aplicativo. O aplicativo usa esse acesso para criar, consultar, recuperar e aplicar a retenção dos seus backups.</p>
+<p>Este aplicativo é de uso pessoal. Esta página apenas descreve o serviço; não oferece login, envio de arquivos ou acesso aos backups.</p>
+<p><a href="privacy.html">Política de Privacidade</a></p>
+<footer>Responsável: pfeitor · <a href="https://github.com/pfeitor/trading-backup/issues">Contato sobre o aplicativo</a>. Não publique credenciais ou conteúdo de backups nos chamados.</footer></main></body>
+</html>
